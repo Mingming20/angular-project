@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<fieldset>
+    <legend class="legend1">
+        <h3 class="h2t1">List of Users</h3>
+    </legend>
+    <table class="table table-bordered table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Address</th>
+                <th scope="col">Course</th>
+                <th scope="col">Email</th>
+                <th scope="col">Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let row of registered">
+                <td>{{row.name}}</td>
+                <td>{{row.address}}</td>
+                <td>{{row.course}}</td>
+                <td>{{row.email}}</td>
+                <td>{{row.gender}}</td>
+                <p class="tdrow" (click)="edit(row)"><button class="btn btn-success">Edit</button></p>
+            </tr>
+        </tbody>
+    </table>
+</fieldset>

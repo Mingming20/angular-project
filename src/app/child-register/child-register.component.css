@@ -1,0 +1,36 @@
+table{
+    width: 750px;
+    float: right;
+    margin-right: 45px;
+    border: 2px;
+    padding: 5px;
+}
+th{
+    color:darkorange;
+    font-size: 15px;
+    background-color: black;
+    text-align: center;
+}
+td{
+    color: brown;
+    background-color: snow;
+    width: 150px;
+    text-align: center;
+}
+.tdrow{
+    background-color: transparent;
+    margin-right: 20px;
+}
+.h2t1{
+    text-align: center;
+    color: fuchsia;
+    font-weight: bold;
+    font-size: 25px;
+}
+button{
+    width: 100px;
+    background-color: gold;
+    color: brown;
+    font-size: 17px;
+    font-weight: bold;
+}
