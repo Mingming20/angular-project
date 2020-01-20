@@ -9,7 +9,9 @@ import { Info } from '../info';
 export class ChildRegisterComponent implements OnInit {
   @Input() registered: Array<Info>;
   @Output() submit = new EventEmitter();
-  // @Output() notify = new EventEmitter();
+  @Output() onsubmit = new EventEmitter();
+  @Output() onedit = new EventEmitter();
+
 
   constructor() { 
     this.registered = new Array<Info>();
@@ -17,12 +19,14 @@ export class ChildRegisterComponent implements OnInit {
 
   edit(form) {
     this.submit.emit(form);
+    this.onsubmit.emit(true);
+    this.onedit.emit(false);
   }
   ngOnInit() {
   }
-  // Notify(){
-  //   this.notify.emit("Thank you for registering!Your information was recieved.")
-  // }
-  
+  back(){
+    this.onsubmit.emit(true);
+    this.onedit.emit(false);
+  }
 
 }
