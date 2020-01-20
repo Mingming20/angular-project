@@ -9,6 +9,7 @@ import { Info } from '../info';
 export class ChildRegisterComponent implements OnInit {
   @Input() registered: Array<Info>;
   @Output() submit = new EventEmitter();
+  // @Output() notify = new EventEmitter();
 
   constructor() { 
     this.registered = new Array<Info>();
@@ -19,6 +20,10 @@ export class ChildRegisterComponent implements OnInit {
   }
   ngOnInit() {
   }
+  // Notify(){
+  //   this.notify.emit("Thank you for registering!Your information was recieved.")
+  // }
   
 
 }
+git sat

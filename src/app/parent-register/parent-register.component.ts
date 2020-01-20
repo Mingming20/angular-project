@@ -9,6 +9,7 @@ import { Info } from '../info';
 export class ParentRegisterComponent implements OnInit {
   public info: Array<Info>;
   public form: Info;
+  public notified: string;
 
   
   constructor() { 

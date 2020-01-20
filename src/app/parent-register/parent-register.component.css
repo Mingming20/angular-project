@@ -16,12 +16,14 @@ select{
 }
 h1{
     text-align: center;
-    margin-top: 2%;
     color: red;
     font-weight: bolder;
 }
+h3{
+    color: lawngreen;
+}
 .field1{
-    margin-top: 25px;
+    margin-top: 40px;
     padding: 10px;
     float: left;
     margin-left: 15px;
