@@ -25,14 +25,6 @@
                         Your address is required.
                     </div>
                 </div>
-                <label>Specialization:</label>
-                <input type="text" class="form-control" placeholder="Course here..." name="course" [(ngModel)]="form.course"
-                    required #course="ngModel"><br>
-                <div *ngIf="course.invalid && (course.dirty || course.touched)" class="alert alert-danger">
-                    <div *ngIf="course.errors.required">
-                        Please input your course.
-                    </div>
-                </div>
                 <label>Email:</label>
                 <input type="text" class="form-control" placeholder="Email here..." name="email" type="email" [email]="true"
                     [(ngModel)]="form.email" required #email="ngModel"><br>
@@ -44,6 +36,19 @@
                         Email is invalid.
                     </div>
                 </div>
+                <label>Specialization:</label>
+                <select type="text" class="form-control"  name="course" [(ngModel)]="form.course"
+                    required #course="ngModel">
+                    <option value="Front-End Developer">Front-end Developer</option>
+                    <option value="Back-end Developer">Back-end Developer</option>
+                    <option value="AWS">AWS</option>
+                </select>
+                <div *ngIf="course.invalid && (course.dirty || course.touched)" class="alert alert-danger">
+                    <div *ngIf="course.errors.required">
+                        Please input your course.
+                    </div>
+                </div>
+                <br>
                 <label>Gender:</label>
                 <select class="form-control" name="gender" [(ngModel)]="form.gender" required #gender="ngModel">
                     <option value="Male">Male</option>

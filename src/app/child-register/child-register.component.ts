@@ -26,4 +26,3 @@ export class ChildRegisterComponent implements OnInit {
   
 
 }
-git sat

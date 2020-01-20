@@ -2,7 +2,6 @@ input{
     width: 400px;
     margin-left: 40px;
     color: gray;
-    background-color: lightgrey;
 }
 label{
     margin-left: 25px;
@@ -11,8 +10,8 @@ label{
     font-size: 16px;
 }
 select{
-    width: 100px;
-    margin-left: 80px;
+    width: 400px;
+    margin-left: 40px;
 }
 h1{
     text-align: center;
